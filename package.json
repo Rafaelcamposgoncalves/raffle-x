@@ -1,0 +1,24 @@
+{
+  "name": "raffle-x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafaelcamposgoncalves/raffle-x.git"
+  },
+  "keywords": [
+    "raffle",
+    "sorteio",
+    "rifa"
+  ],
+  "author": "Rafael Campos Gonçalves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rafaelcamposgoncalves/raffle-x/issues"
+  },
+  "homepage": "https://github.com/Rafaelcamposgoncalves/raffle-x#readme"
+}
