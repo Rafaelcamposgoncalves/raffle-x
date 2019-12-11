@@ -17,4 +17,4 @@ const colab = [
     }
 ];
 
-console.log(test.raffle(colab));
+    console.log(test.raffle(colab, 3));
