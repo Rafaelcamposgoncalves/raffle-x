@@ -1,5 +1,4 @@
 const test = require('./rafflex');
-
 const colab = [
     {
         "id": "53000275",
@@ -16,5 +15,4 @@ const colab = [
         "name": "Croquinho crocal"
     }
 ];
-
-    console.log(test.raffle(colab, 3));
+console.log(test.raffle(colab, 20, true));
