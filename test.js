@@ -18,5 +18,5 @@ const names = [
         "name": "Name 5"
     }
 ];
-const raffle = rafflex.raffle(names, 20, false);
+const raffle = rafflex.raffle(names, 'id', 6, false);
 console.log(raffle);

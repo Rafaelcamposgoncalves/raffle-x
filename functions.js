@@ -7,9 +7,11 @@ exports.rand = (min, max) => {
 exports.removeRowJson = (json, key, value, repeat) => {
     return !repeat ? json.filter((jsonObject) => { return jsonObject[key] != value;}) : json;
 }
-exports.removeDuplicate = (json) => {
-    j = json.filter((a) => {
-        return !this[JSON.stringify(a.id)] && (this[JSON.stringify(a.id)] = true);
-    }, Object.create(null));
-    return j;
+exports.removeDuplicate = (json, key) => {
+    filterByKey = (key) => {
+        return filter = (a) => {
+            return !this[JSON.stringify(a[key])] && (this[JSON.stringify(a[key])] = true);
+        }
+    }
+    return json.filter(filterByKey(key));
 }
