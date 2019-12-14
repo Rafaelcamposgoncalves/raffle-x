@@ -10,12 +10,12 @@ const raffleX = require('raffle-x');
 ### Parameters  
 (array, key, quantity, false)
 
-| PARAMETER  | VALUE           | OBS                                          |
-|------------|-----------------|----------------------------------------------|
-| array      | JSON array      | JSON array with values ​​to be raffles         |
-| key        | array key       | Key of the field to be located               |
-| quantity   | quantity number | Number of names raffles                      |
-| duplicity  | true/false      | If the same die can be drawn more than once  |
+| PARAMETER  | VALUE           | OBS                                           |
+|------------|-----------------|-----------------------------------------------|
+| array      | JSON array      | JSON array with values ​​to be raffles          |
+| key        | array key       | Key of the field to be located                |
+| quantity   | quantity number | Number of names raffles                       |
+| duplicity  | true/false      | If the same die can be raffles more than once |
   
 
 ### Usage example 
@@ -56,4 +56,4 @@ returns a json object with the raffle values
 ```
 ### Note
 	
-> If you have any duplicate keys, **raffle-x** considers only the last one.
+> If you have any duplicate keys, **raffle-x** considers only the first one.
