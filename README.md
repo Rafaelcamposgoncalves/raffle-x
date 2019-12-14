@@ -1,6 +1,6 @@
 # raflle-x
   
-Name raffle module.
+Raffle package.
    
 ### Importing  
 ```javascript
