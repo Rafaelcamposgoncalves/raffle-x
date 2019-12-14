@@ -1,18 +1,19 @@
-const test = require('./rafflex');
-const colab = [
-    {
-        "id": "53000275",
-        "name": "Rafael Campos Gonçalves",
-    },{
-        "id": "53000111",
-        "name": "Crocodilo do Croco Crocal"
-    },{
-        "id": "53000222",
-        "name": "Chupetinha da chupa e chupa"
-    
-    },{
-        "id": "53000333",
-        "name": "Croquinho crocal"
+const f = require('./functions');
+exports.raffle = (json, count=1, repeat=false) => {
+    let j = json, total=[];
+/*     
+     j = j.filter(function (a) {
+        return !this[JSON.stringify(a.id)] && (this[JSON.stringify(a.id)] = true);
+     }, Object.create(null));
+*/
+
+    j = f.removeDuplicate(j);
+
+    count = !repeat ? f.setMax(count, j.length):count;
+
+    for(i=0;i<count;i++){
+        total = total.concat(j[f.rand(0, j.length-1)]);
+        j = f.removeRowJson(j, 'id', total[i].id, repeat);
     }
-];
-console.log(test.raffle(colab, 20, true));
+    return total;
+}
